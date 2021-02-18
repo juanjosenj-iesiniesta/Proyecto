@@ -20,18 +20,41 @@
 </head>
 <body div class="p-3 mb-2 bg-danger text-black">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="Recursos/Captura de pantalla 2021-02-10 123107.png" alt="Flixhbon" width="100"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">        
-            <li><a class="dropdown-item" href="Películas.html">Películas</a></li>
-            <li><a class="dropdown-item" href="Series.html">Series</a></li>
-            <li><a class="dropdown-item" href="Sagas.html">Sagas de películas</a></li>
-            <li><a class="dropdown-item" href="Top-actores.html">Top actores</a></li>           
-          </ul>
-        </div>
-      </nav>
+      <a class="navbar-brand" href="index.html"><img src="Recursos/Captura de pantalla 2021-02-10 123107.png" alt="Flixhbon" width="100"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">        
+          <li><a class="dropdown-item" href="Películas.html">Películas</a></li>
+          <li><a class="dropdown-item" href="Series.html">Series</a></li>
+          <li><a class="dropdown-item" href="Sagas.html">Sagas de películas</a></li>
+          <li><a class="dropdown-item" href="Top-actores.html">Top actores</a></li>           
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Primera película de la historia:</h5>
+        <p class="card-text">"<strong><i>Salida de los obreros de la fábrica</i></strong>" tiene una duración de 46 segundos, los 46 segundos que más han marcado la historia del cine. Fue exhibida de forma comercial el 22 de marzo de 1895 en la Sociedad Francesa de Fomento de la Industria Nacional, obteniendo un gran éxito. <br>
+        A pesar de que sus autores, Auguste Marie y Louis Jean Lumière, dijeran que <strong><i>el cine es una invención sin futuro</i></strong>, el cine se ha convertido en el <strong>séptimo arte</strong>.</p>
+      </div>
+      <iframe id="demo" style="display:none" height="400" src="https://www.youtube.com/embed/xxLGDF_121U?start=6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <button class="btn btn-dark" type="button" onclick="mostraruocultar()">Ver/ Ocultar película</button>
+  </div>
+<script>
+  function mostraruocultar(){
+    //alert("hola"); 
+    //hacer si está visible
+      if(document.getElementById('demo').style.display=='block'){
+      document.getElementById('demo').style.display='none';
+      }
+      else{
+      //hacer si está oculto
+    document.getElementById('demo').style.display='block';
+    }
+  }
+</script>
 </body>
 </html>

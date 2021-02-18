@@ -22,8 +22,6 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="recursos/Captura de pantalla 2021-02-10 123107.png" alt="flixhbon" width="100"></a>
-      <script> function bienvenida(){ alert("Saludos, esperemos que disfrutes de esta fantástica página web")}</script>
-        <button class="btn btn-warning" type="button" onclick="bienvenida()">Bienvenid@ </button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,9 +53,70 @@
   <h1 class="text-center">¿Qué puedes encontrar aquí?</h1>
   <p class="p-3 mb-2 bg-success text-white">En esta página podrás encontrar todo tipo de información sobre series y peliculas, pasando desde las sagas más miticas hasta el top de actores que participan. Además de repasar la historia del cine</p>
   <img src="recursos/5-sagas-cine.jpg" class="rounded mx-auto d-block" alt="sagas" width="1450px">
+<br>
 
- 
+<div class="alert alert-warning" role="alert">
+ RECOMENDACIONES
+</div>
 
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01" required>
+      <div class="valid-feedback">
+        Bien hecho
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Apellidos</label>
+      <input type="text" class="form-control" id="validationCustom02" required>
+      <div class="valid-feedback">
+        Bien hecho
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Tipo de contenido</label>
+      <select class="custom-select" id="validationCustom04" required>
+        <option selected disabled value="">Elige...</option>
+        <option>Película</option>
+        <option>Serie</option>
+        <option>Saga</option>
+      </select>
+    </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom02">Recomendación</label>
+        <input type="text" class="form-control" id="validationCustom02" required>
+        <div class="valid-feedback">
+          Bien hecho
+        </div>
+      </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 
 </body>
 </html>
