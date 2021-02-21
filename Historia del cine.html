@@ -25,7 +25,17 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">        
+        <ul class="navbar-nav">   
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Etapas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#Cine mudo">Cine mudo</a>
+              <a class="dropdown-item" href="#Clásico-moderno">Cine clásico --> Cine moderno</a>
+              <a class="dropdown-item" href="#Misterio">Misterio</a>
+              <a class="dropdown-item" href="#Terror">Terror</a>
+          </li>     
           <li><a class="dropdown-item" href="Películas.html">Películas</a></li>
           <li><a class="dropdown-item" href="Series.html">Series</a></li>
           <li><a class="dropdown-item" href="Sagas.html">Sagas de películas</a></li>
@@ -56,8 +66,9 @@
     }
   }
 </script>
+
 <div class="card text-white bg-secondary mb-3">
-  <h4><div class="card-header" style="text-align: center;">Cine mudo</div></h4>
+  <a name="Cine mudo"><h4><div class="card-header" style="text-align: center;">Cine mudo</div></h4></a>
   <div class="container" style="text-align: center;">
     <h5>El cine mudo tenía tres características principales:</h5>
 </div>
@@ -84,6 +95,7 @@
         <img src="Recursos/Cine mudo/Música.png" class="card-img-top" alt="Ejemplo de una orquesta en un cine mudo">
         <br>
         <br>
+        <!-- Tamaño audio -->
         Música de la escena de lucha en la película <i>El chico</i> de <strong>Charlie Chaplin</strong>.
         <audio controls>
           <source src="Recursos/Cine mudo/Música cine mudo.mp3" type="audio/mpeg">
@@ -92,7 +104,6 @@
       </div>
     </div>
   </div>
-  
   <div class="container" style="text-align: center;">
     <h5>Actores más famosos</h5>
 </div>
@@ -123,5 +134,27 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="card text-white bg-dark mb-3">
+  <div class="card-body">
+    <a name="Clásico-moderno"><h5 class="card-title">Del cine clásico al cine moderno</h5></a>
+    <p class="card-text">"<strong><i>Salida de los obreros de la fábrica</i></strong>" tiene una duración de 46 segundos, los 46 segundos que más han marcado la historia del cine. Fue exhibida de forma comercial el 22 de marzo de 1895 en la Sociedad Francesa de Fomento de la Industria Nacional, obteniendo un gran éxito. <br>
+    A pesar de que sus autores, Auguste Marie y Louis Jean Lumière, dijeran que <strong><i>el cine es una invención sin futuro</i></strong>, el cine se ha convertido en el <strong>séptimo arte</strong>.</p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img src="" alt="">
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+</div>
 </body>
 </html>
