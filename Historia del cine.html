@@ -20,18 +20,154 @@
 </head>
 <body div class="p-3 mb-2 bg-danger text-black">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="Recursos/Captura de pantalla 2021-02-10 123107.png" alt="Flixhbon" width="100"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">        
-            <li><a class="dropdown-item" href="Películas.html">Películas</a></li>
-            <li><a class="dropdown-item" href="Series.html">Series</a></li>
-            <li><a class="dropdown-item" href="Sagas.html">Sagas de películas</a></li>
-            <li><a class="dropdown-item" href="Top-actores.html">Top actores</a></li>           
-          </ul>
-        </div>
-      </nav>
+      <a class="navbar-brand" href="index.html"><img src="Recursos/Captura de pantalla 2021-02-10 123107.png" alt="Flixhbon" width="100"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">   
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Etapas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#Cine mudo">Cine mudo</a>
+              <a class="dropdown-item" href="#Clásico-moderno">Cine clásico → Cine moderno</a>
+              <a class="dropdown-item" href="#Actualidad">Actualidad</a>
+          </li>     
+          <li><a class="dropdown-item" href="Películas.html">Películas</a></li>
+          <li><a class="dropdown-item" href="Series.html">Series</a></li>
+          <li><a class="dropdown-item" href="Sagas.html">Sagas de películas</a></li>
+          <li><a class="dropdown-item" href="Top-actores.html">Top actores</a></li>           
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <div class="card text-white bg-dark mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Primera película de la historia:</h5>
+        <p class="card-text">"<strong><i>Salida de los obreros de la fábrica</i></strong>" tiene una duración de 46 segundos, los 46 segundos que más han marcado la historia del cine. Fue exhibida de forma comercial el 22 de marzo de 1895 en la Sociedad Francesa de Fomento de la Industria Nacional, obteniendo un gran éxito. <br>
+        A pesar de que sus autores, Auguste Marie y Louis Jean Lumière, dijeran que <strong><i>el cine es una invención sin futuro</i></strong>, el cine se ha convertido en el <strong>séptimo arte</strong>.</p>
+      </div>
+      <iframe id="demo" style="display:none" height="400" src="https://www.youtube.com/embed/xxLGDF_121U?start=6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <button class="btn btn-dark" type="button" onclick="mostraruocultar()">Ver/ Ocultar película</button>
+  </div>
+<script>
+  function mostraruocultar(){
+    //alert("hola"); 
+    //hacer si está visible
+      if(document.getElementById('demo').style.display=='block'){
+      document.getElementById('demo').style.display='none';
+      }
+      else{
+      //hacer si está oculto
+    document.getElementById('demo').style.display='block';
+    }
+  }
+</script>
+
+<div class="card text-white bg-secondary mb-3">
+  <a name="Cine mudo"><h4><div class="card-header" style="text-align: center;">Cine mudo</div></h4></a>
+  <div class="container" style="text-align: center;">
+    <h5>El cine mudo tenía tres características principales:</h5>
+</div>
+  <div class="card-group ">
+    <div class="card text-white bg-secondary mb-3">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Calidad de la imagen</h5>
+        <p class="card-text">La calidad era a menudo bastante alta, a diferencia de lo que la mayoría de la gente piensa. En la actualidad la mayoría tienen falta de calidad porque se han conservado mal, lo que lleva a su deterioro.<br>
+        Las pocas que están bien conservadas se ven aceleradas porque se reproducen a 24 fps mientras que fueron grabadas a 16fps. Otro dato a tener en cuenta es que tuvieron cortes de censura por lo que se producen saltos o cortes bruscos.</p>
+        <img src="Recursos/Cine mudo/Calidad.png" class="card-img-top" alt="Muestra de la calidad de imagen">
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Intertítulos</h5>
+        <p class="card-text">La misión de estos intertítulos era la de narrar momentos de difícil comprensión o resaltar diálogos claves de la historia. También, a veces desprendían opiniones o generaban comicidad. Es uno de los elementos más característicos de esta etapa del cine.</p>
+        <img src="Recursos/Cine mudo/Intertítulo.jpg" class="card-img-top" alt="Ejemplo de intertítulo">
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Música en directo</h5>
+        <p class="card-text">La tradición de música paralela a la proyección venía desde las primeras películas de los hermanos Lumière.  Pero sería Edison el que sentó las bases de que, a ser posible, las películas debían estar acompañadas con una orquesta en vivo. La primera vez que se proyectó una película muda con una orquesta en directo fue en 1896 en Nueva York.</p>
+        <img src="Recursos/Cine mudo/Música.png" class="card-img-top" alt="Ejemplo de una orquesta en un cine mudo">
+        <br>
+        <br>
+        <!-- Tamaño audio -->
+        Música de la escena de lucha en la película <i>El chico</i> de <strong>Charlie Chaplin</strong>.
+        <audio controls>
+          <source src="Recursos/Cine mudo/Música cine mudo.mp3" type="audio/mpeg">
+          Error al reproducir: tu navegador no soporta esta etiqueta de audio.
+      </audio>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="text-align: center;">
+    <h5>Actores más famosos</h5>
+</div>
+  <div class="card-group ">
+    <div class="card text-white bg-secondary mb-3">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Buster Keaton</h5>
+        <p class="card-text">Impuso su propia personalidad con la creación de un personaje que lo iba a hacer célebre: la del hombre que, incluso en las más estrafalarias situaciones, no ríe nunca.
+        Terminó en un manicomio, víctima de un grave agotamiento nervioso. Reapareció 25 años después perono era más que una sombra de sí mismo.
+        </p>
+        <img src="Recursos/Cine mudo/Buster Keaton.jpg" class="card-img-top" alt="Buster Keaton">
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Harold Lloyd</h5>
+        <p class="card-text">Fue eclipsado por Buster Keaton y Charlie Chaplin, pero se abrió paso y se hizo famoso con su personaje estrella que era un hombre normal, lleno de ingenuidad, tímido pero vivaz, solitario pero aventurero, con unas gafas redondas y un sombrero de paja.   
+        </p>
+        <img src="Recursos/Cine mudo/Harold Lloyd.jpg" class="card-img-top" alt="Harold Lloyd">
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Charlie Chaplin</h5>
+        <p class="card-text">Su personaje célebre es el más conocido del cine mudo: <strong>Charlot</strong>. Se caracterizaba por tener bigote y un andar con los pies separados apuntando hacia los laterales. Utilizaba una chaqueta desgastada con forma de smoking, unos pantalones y zapatos grandes también desgastados, un bombín y una caña como bastón. 
+        </p>
+        <img src="Recursos/Cine mudo/Charlie Chaplin 2.jpg" class="card-img-top" alt="Charlie Chaplin">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card text-black bg-light mb-3">
+  <div class="card-body">
+    <a name="Clásico-moderno"><h5 class="card-title">Del cine clásico al cine moderno</h5></a>
+    <p class="card-text text-justify">El cine clásico respetaba unas convenciones visuales, sonoras e ideológicas, de tal forma que cualquier espectador reconocía el sentido final de la historia y sus connotaciones; mientras que el cine moderno surgió porque los directores de cine empezaron a hacer cine a su manera, sin tener que apoyarse en lo tradicional.
+    <br>
+    Por lo tanto, mientras el cine <strong>clásico</strong> es <strong>tradicional</strong>, el cine <strong>moderno</strong> es <strong>individual</strong>. Mientras el cine clásico está constituido por un sistema de convenciones que a su vez constituyen la tradición cinematográfica, el cine moderno está formado por las aportaciones de artistas individuales que ofrecen elementos específicos derivados de su visión personal de las posibilidades expresivas del lenguaje cinematográfico.</p>
+  </div>
+</div>
+<div class="card bg-warning mb-3">
+  <div class="card-body">
+    <a name="Actualidad"><h5 class="card-title">El cine en la actualidad</h5></a>
+    <p class="card-text">Actualmente las personas no suelen ir al cine por tres motivos: No tienen cerca de sus casas ninguno abierto, no quieren ir por el Covid-19 o prefieren ver las películas desde la comodidad del hogar.
+    <br>
+    Para este último motivo utilizan plataformas de películas y series bajo demanda. Estas plataformas son pagando, pero son más baratas que ir al cine, otra de las razones por la que la gente prefiere verse una película desde alguna de estas plataformas.
+    <br>
+    Nuestra recomendación es comprar Amazon Prime Video, ya que, además de ser la más barata, incluye varias ventajas como: envíos gratuitos en Amazon, los envíos te llegan de 1-3 días, Twitch sin anuncios... Luego si en Netflix estrenan una serie que quieres ver, pagas un mes y ya está.
+    </p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <a target="new" href="https://www.netflix.com/es/"><img src="Recursos/Cine actual/Netflix.png" alt="Netflix" width="75%"></a>
+      </div>
+      <div class="col-sm">
+        <a target="new" href="https://es.hboespana.com/"><img src="Recursos/Cine actual/HBO.png" alt="Netflix" width="75%"></a>
+      </div>
+      <div class="col-sm">
+        <br>
+        <a target="new" href="https://www.primevideo.com/"><img src="Recursos/Cine actual/Amazon Prime Video.svg.png" alt="Netflix" width="75%"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
